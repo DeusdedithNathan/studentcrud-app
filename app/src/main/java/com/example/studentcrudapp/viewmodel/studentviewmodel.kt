@@ -33,5 +33,6 @@ class StudentViewModel(private val repository: StudentRepository) : ViewModel() 
     fun deleteStudent(student: Student) = viewModelScope.launch {
         repository.delete(student)
 
+
     }
 }
